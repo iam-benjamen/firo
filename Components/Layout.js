@@ -1,9 +1,11 @@
-import styles from "../styles/Layout.module.css";
+
+import { NavBar } from "./NavBar";
 
 const Layout = ({ children }) => {
   return (
-    <div className={styles.container}>
-      <main className={styles.main}>{children}</main>
+    <div>
+      <NavBar />
+      <main>{children}</main>
     </div>
   );
 };
