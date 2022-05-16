@@ -1,5 +1,13 @@
 import logo from "../public/firo-logo.png";
 import Image from "next/image";
+import ref1 from "../public/Group 968.svg";
+import blog1 from "../public/blog/Rectangle 490.svg";
+import blog2 from "../public/blog/Rectangle 491.svg";
+import blog3 from "../public/blog/image 4.svg";
+import arrow from "../public/blog/Arrow 5.svg";
+import chipset from "../public/Group 929.svg";
+import dashboard from "../public/Dashboard 1.svg";
+import FooterComponent from "../Components/Footer";
 
 const AboutPage = () => {
   return (
@@ -32,8 +40,10 @@ const AboutPage = () => {
         </div>
       </aside>
       <div className="bg-background w-3/4 float-right">
-        <div className="pl-28 pr-52 flex flex-col gap-4 pt-24 font-poppins">
-          <h1 className="font-semibold text-3xl text-registerblack">What is Firo?</h1>
+        <div className="pl-28 pr-36 flex flex-col gap-4 pt-24 font-poppins">
+          <h1 className="font-semibold text-3xl text-registerblack">
+            What is Firo?
+          </h1>
           <p className="text-sm text-mygrey leading-6">
             The Firo Platform is blockchain technology with an advanced feature
             set. It takes some of both Bitcoin and Ethereum’s features and
@@ -65,6 +75,126 @@ const AboutPage = () => {
             pool dominance.
           </p>
         </div>
+        <div className="bg-white w-[85%] mt-16 pl-20 rounded-r-3xl">
+          <Image src={ref1} alt="some picture" />
+        </div>
+        <div className="font-poppins pl-20 pt-14 w-[80%]">
+          <h2 className="font-semibold text-2xl pb-6">Blog</h2>
+          <div className="flex gap-2">
+            <div className="flex flex-col rounded-3xl w-[16rem] bg-white shadow-lg pb-4">
+              <div className="self-center pt-2">
+                <Image src={blog1} alt="blog image1" />
+              </div>
+              <div className="px-4 flex flex-col gap-2">
+                <h3 className="font-semibold text-lg">Blog Article 1</h3>
+                <p className="text-mygrey text-sm">
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla.
+                </p>
+                <div className="flex gap-2 cursor-pointer">
+                  <Image src={arrow} alt="arrow icon" />
+                  <p className="text-sm font-semibold">Read More</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col rounded-3xl w-[16rem] bg-white shadow-lg pb-4">
+              <div className="self-center pt-2">
+                <Image src={blog2} alt="blog image1" />
+              </div>
+              <div className="px-4 flex flex-col gap-2">
+                <h3 className="font-semibold text-lg">Blog Article 2</h3>
+                <p className="text-mygrey text-sm">
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla.
+                </p>
+                <div className="flex gap-2 cursor-pointer">
+                  <Image src={arrow} alt="arrow icon" />
+                  <p className="text-sm font-semibold">Read More</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col rounded-3xl w-[16rem] bg-white shadow-lg pb-4">
+              <div className="self-center pt-2">
+                <Image src={blog3} alt="blog image1" />
+              </div>
+              <div className="px-4 flex flex-col gap-2">
+                <h3 className="font-semibold text-lg">Blog Article 3</h3>
+                <p className="text-mygrey text-sm">
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla.
+                </p>
+                <div className="flex gap-2 cursor-pointer">
+                  <Image src={arrow} alt="arrow icon" />
+                  <p className="text-sm font-semibold">Read More</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="bg-registerblack mt-20 py-20 pl-24 font-poppins">
+          <div className="text-white">
+            <h2 className="text-3xl font-semibold">New to Mining?</h2>
+            <p className="text-xs pt-2">
+              Please read our mining rig guide for a complete tutorial on how to
+              put together
+              <br /> a Firo mining setup
+            </p>
+            <button className="w-max text-white rounded-full border border-white py-4 px-9 mt-5">
+              Read More
+            </button>
+          </div>
+        </div>
+        <div className="flex pt-20 pl-20 font-poppins bg-white">
+          <div className="w-1/2">
+            <h2 className="font-semibold text-2xl pb-4">
+              Firo Mining Chipsets
+            </h2>
+            <div className="flex flex-col w-[90%] gap-4">
+              <p className="text-mygrey text-xs">
+                If you’re new to Firo mining, check out our Firo GPU comparison
+                guide to find the best Firo mining chipset. We also have a list
+                of motherboards.
+              </p>
+              <p className="text-mygrey text-xs">
+                You’ll need a chip with at least 2.5GB of memory on it, though
+                4GB is recommended.
+              </p>
+              <p className="text-mygrey text-xs">
+                {" "}
+                If you do any graphics heavy processing such as gaming or video
+                editing, chances are you already have a chipset that’s able to
+                mine. Conversely, if you buy a GPU mining chipset, you’ll be
+                equipped for some rad gaming.
+              </p>
+              <p className="text-mygrey text-xs">
+                You may have trouble finding a particular GPU. Please sign up
+                for our giveaways or visit our list of recommended vendors for
+                the best prices available on Firo GPUs.
+              </p>
+            </div>
+            <button className="w-max text-registerblack rounded-full border border-registerblack py-4 px-10 mt-5">
+              Read an Article
+            </button>
+          </div>
+          <div>
+            <Image src={chipset} alt="chipset mining image" />
+          </div>
+        </div>
+
+        <div className="pl-20 font-poppins bg-white pt-14 pb-16">
+          <h2 className="font-semibold text-2xl">
+            Viewing your Firo mining dashboard
+          </h2>
+          <p className="pt-4 pb-10 text-xs text-mygrey w-3/4">
+            You’ll want to watch your miner’s performance! The mining pool
+            dashboard monitors each worker’s performance and history, detailing
+            the exact Firo rewards you receive daily.
+          </p>
+          <Image alt="dashboard" src={dashboard} />
+        </div>
+        <FooterComponent/>
       </div>
     </div>
   );

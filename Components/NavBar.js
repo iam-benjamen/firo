@@ -11,7 +11,7 @@ export const NavBar = () => {
         </Link>
       </div>
       <ul className=" flex text-sm gap-12 items-center h-full">
-        <li className="text-mygrey py-9 active:text-black active:border-b-4 border-red-800 cursor-pointer">
+        <li className="text-mygrey py-9 active:text-black active:border-b-4 hover:text-black hover:border-b-4 border-red-800 cursor-pointer">
           <Link href={"/"}>Home</Link>
         </li>
         <li className="text-mygrey">
@@ -25,9 +25,9 @@ export const NavBar = () => {
           <Link href={""}>How to set up a mining rig </Link>
         </li>
         <li className="text-mygrey">
-          <Link href={""}>FAQ</Link>
+          <Link href={"/faq"}>FAQ</Link>
         </li>
-        <li className="text-registerblack rounded-full border border-registerblack py-4 px-10">
+        <li className="text-registerblack rounded-full border border-registerblack py-4 px-10 hover:bg-black hover:text-white">
           <button className="">Register</button>
         </li>
       </ul>
