@@ -8,6 +8,7 @@ import arrow from "../public/blog/Arrow 5.svg";
 import chipset from "../public/Group 929.svg";
 import dashboard from "../public/Dashboard 1.svg";
 import FooterComponent from "../Components/Footer";
+import vectors from "../public/jSDK.svg";
 
 const AboutPage = () => {
   return (
@@ -133,7 +134,7 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-        <div className="bg-registerblack mt-20 py-20 pl-24 font-poppins">
+        <div className="bg-registerblack mt-20 py-20 pl-24 font-poppins flex">
           <div className="text-white">
             <h2 className="text-3xl font-semibold">New to Mining?</h2>
             <p className="text-xs pt-2">
@@ -182,7 +183,53 @@ const AboutPage = () => {
             <Image src={chipset} alt="chipset mining image" />
           </div>
         </div>
-
+        <div className="flex pt-16 pb-20 pl-20 font-poppins bg-background flex-col">
+          <h2 className="font-semibold text-3xl">
+            Best Firo mining software and Firo wallet
+          </h2>
+          <p className="font-normal text-sm text-mygrey pt-8 pr-28">
+            Once you have your mining hardware available, you’ll want to get a
+            Firo Wallet. We recommend the platform’s desktop wallet. Next,
+            select your mining server from the following list:
+          </p>
+          <div className="flex flex-col gap-3 pt-7 pb-10">
+            <div className="bg-background rounded-full flex py-2 w-5/6 pl-10 pr-16 justify-between items-center">
+              <span className="text-mygrey py-2">Location</span>
+              <span className=" text-mygrey text-sm pl-12">Server</span>
+              <span className="text-mygrey text-sm pl-12">Port</span>
+              <span className="text-mygrey text-sm ">SSL Port</span>
+            </div>
+            <div className="shadow-md bg-white rounded-full flex py-2 w-5/6 pl-3 pr-16 divide-x justify-between items-center">
+              <button className="bg-[#c10b25] bg-opacity-10 rounded-full text-[#C10B25] font-semibold py-2 w-36">
+                Americas
+              </button>
+              <span className="text-sm pl-12">am.nextpool.org</span>
+              <span className="text-sm pl-12">8888</span>
+              <span className="text-sm pl-12">8889</span>
+            </div>
+            <div className="shadow-md bg-white rounded-full flex py-2 w-5/6 pl-3 pr-16 divide-x justify-between items-center">
+              <button className="bg-[#77CBD8] bg-opacity-10 rounded-full text-[#77CBD8] font-semibold py-2 w-36">
+                Europe
+              </button>
+              <span className="text-sm pl-12">eu.nextpool.org</span>
+              <span className="text-sm pl-12">8888</span>
+              <span className="text-sm pl-12">8889</span>
+            </div>
+            <div className="shadow-md bg-white rounded-full flex py-2 w-5/6 pl-3 pr-16 divide-x justify-between items-center">
+              <button className="bg-[#FEC562] bg-opacity-10 rounded-full text-[#FEC562] font-semibold py-2 w-36">
+                Asia
+              </button>
+              <span className="text-sm pl-12">as.nextpool.org</span>
+              <span className="text-sm pl-12">8888</span>
+              <span className="text-sm pl-12">8889</span>
+            </div>
+          </div>
+          <p className="text-mygrey text-xs pr-28">
+            Write down your selected server and download a miner. Both sbminer
+            or lolminer come with good software and guides, but there are many
+            available options.
+          </p>
+        </div>
         <div className="pl-20 font-poppins bg-white pt-14 pb-16">
           <h2 className="font-semibold text-2xl">
             Viewing your Firo mining dashboard
@@ -194,7 +241,6 @@ const AboutPage = () => {
           </p>
           <Image alt="dashboard" src={dashboard} />
         </div>
-        <FooterComponent/>
       </div>
     </div>
   );

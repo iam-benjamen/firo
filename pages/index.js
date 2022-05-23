@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import mainImage from "../public/Group 8.svg";
 import searchbtn from "../public/circle2017.svg";
+import FooterComponent from "../Components/Footer";
 
 export default function Home() {
   return (
@@ -21,7 +22,6 @@ export default function Home() {
             <Image src={searchbtn} alt="search button" />
           </span>
         </label>
-
         <button className="w-max text-registerblack rounded-full border border-registerblack py-4 px-10">
           Start Now
         </button>

@@ -22,12 +22,12 @@ export const NavBar = () => {
           </Link>
         </li>
         <li className="text-mygrey">
-          <Link href={""}>How to set up a mining rig </Link>
+          <Link href={"/setup"}>How to set up a mining rig </Link>
         </li>
         <li className="text-mygrey">
           <Link href={"/faq"}>FAQ</Link>
         </li>
-        <li className="text-registerblack rounded-full border border-registerblack py-4 px-10 hover:bg-black hover:text-white">
+        <li className="cursor-pointer text-registerblack rounded-full border border-registerblack py-4 px-10 hover:bg-black hover:text-white">
           <button className="">Register</button>
         </li>
       </ul>
